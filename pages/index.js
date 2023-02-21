@@ -1,9 +1,12 @@
-import Layout from "@/components/layout/Layout"
+import Layout from "@/components/layout/Layout";
 
-export default function Home() {
+
+export default function Index() {
   return (
     <Layout>
-      <h1 className="text-red-600">Home</h1>
+      <div>
+        <h2>Inicio</h2>
+      </div>
     </Layout>
-  )
+  );
 }

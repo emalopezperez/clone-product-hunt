@@ -1,18 +1,17 @@
-
 import Head from "next/head";
 import Header from "../header/Header";
-import Nav from "../header/navBar/Nav";
 
-const Layout = (props) => {
+const Layout = ({ children, title = "", description = "" }) => {
   return (
     <>
-      <Head/>
-      <Header />
-      <main>
-        { props.children }
-      </main>
+      <Head>
+        <title>Clone</title>
+        <meta name="description" content="" />
+      </Head>
+      <Header/>
+      {children}
     </>
-  )
-}
+  );
+};
 
 export default Layout;
