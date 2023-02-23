@@ -5,37 +5,37 @@ const LoginUsers = () => {
     <BasicModal>
       <div className='flex justify-center mt-10 md:mt-4'>
         <div className="h-[600px] w-[190px] md:h-[200px] md:w-[350px] rounded-xl text-white">
-          <div className=" mx-auto ">
+          <div className="mx-auto ">
             <h1 className="text-xl md:text-3xl text-[#21293c] font-bold">Iniciar Sesion</h1>
             <form
-              className="w-full flex flex-col py-4 text-black"
+              className="flex flex-col w-full py-4 text-black"
             >
-              <label className="text-sm md:text-md font-bold" htmlFor="nombre">Nombre</label>
+              <label className="text-sm font-bold md:text-md" htmlFor="nombre">Nombre</label>
               <input
                 type="text"
                 id="nombre"
                 placeholder="Escribe tu nombre"
                 name="nombre"
-                className="p-1 md:p-3 my-2 rounded-md outline-none  rounded-bl-none"
+                className="p-1 my-2 rounded-md rounded-bl-none outline-none md:p-3"
                 autoComplete="nombre"
               />
 
-              <label className="text-sm md:text-md font-bold" htmlFor="email">email</label>
+              <label className="text-sm font-bold md:text-md" htmlFor="email">email</label>
               <input
                 type="email"
                 id="email"
                 placeholder="Escribe tu email"
                 name="email"
-                className="p-1 md:p-3 my-2 rounded-md outline-none  rounded-bl-none"
+                className="p-1 my-2 rounded-md rounded-bl-none outline-none md:p-3"
                 autoComplete="email"
               />
-              <label className="text-sm md:text-md font-bold" htmlFor="Password">Password</label>
+              <label className="text-sm font-bold md:text-md" htmlFor="Password">Password</label>
               <input
                 type="password"
                 id="password"
                 placeholder="Escribe tu password"
                 name="password"
-                className="p-1 md:p-3 my-2 rounded-md outline-none  rounded-bl-none"
+                className="p-1 my-2 rounded-md rounded-bl-none outline-none md:p-3"
                 autoComplete="password"
               />
               <button
@@ -44,7 +44,7 @@ const LoginUsers = () => {
               >
                 Registrarse
               </button>
-              <p className="mt-3 md:mt-6 mb-2 ">
+              <p className="mt-3 mb-2 md:mt-6 ">
                 <span className="text-gray-600">Already subscribed?</span>{ " " }
                 <button className="text-[#ff6154] ">
                   Registrarse

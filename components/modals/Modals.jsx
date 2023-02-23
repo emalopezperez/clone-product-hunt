@@ -12,8 +12,8 @@ const BasicModal = ({ sowModal, setSowModal, children }) => {
   return (
     <>
       {
-        modal && <div className="fixed top-0 bottom-0 left-0 right-0 bg-black/80 z-50">
-          <div className="flex ml-2 md:ml-56 mt-10">
+        modal && <div className="fixed top-0 bottom-0 left-0 right-0 z-50 bg-black/80">
+          <div className="flex mt-10 ml-2 md:ml-56">
             <div
               onClick={ handleModal }
               className="p-3 bg-white rounded-full shadow-lg cursor-pointer shadow-gray-700">
@@ -22,9 +22,9 @@ const BasicModal = ({ sowModal, setSowModal, children }) => {
               </Link>
             </div>
           </div>
-          <div className="flex justify-center items-center h-full">
-            <div className="bg-white/90 h-[470px] w-[250px] md:h-[550px] md:w-[650px] rounded-xl">
-              <div className="flex justify-center items-center">
+          <div className="flex justify-center h-full mt-12">
+            <div className="bg-white/95 h-[470px] w-[250px] md:h-[480px] md:w-[430px] rounded-xl">
+              <div className="flex items-center justify-center">
                 { children }
               </div>
             </div>
